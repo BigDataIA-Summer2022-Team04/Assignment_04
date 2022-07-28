@@ -12,5 +12,6 @@ tasks:
     val_size:  {{ val_size }}
 
 baselines:
-   - name: {{ baselines }}
-   - name: random
+    {% for element in  baselines %}
+    - name: {{ element }}
+    {% endfor %}
