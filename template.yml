@@ -1,0 +1,16 @@
+paths:
+  embedding_folder: embeddings/
+  groundtruth_folder: data/
+  submission_folder: submissions/
+  results_folder: results/
+
+tasks:
+  - data_id: {{ data_id }}
+    train_size:  {{ train_size }}
+    noise_level:  {{ noise_level }}
+    test_size:  {{ test_size }}
+    val_size:  {{ val_size }}
+
+baselines:
+   - name: {{ baselines }}
+   - name: random
