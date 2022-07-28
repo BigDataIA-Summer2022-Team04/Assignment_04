@@ -6,6 +6,7 @@ import os
 import sys
 import yaml
 from yaml import Loader
+import time
 
 def extract_method(row):
     method = row['submission']
@@ -56,7 +57,8 @@ def plot(evaluation_file, result_folder):
     leg = ax.legend(handles=handles, labels=labels)
     for line in leg.get_lines():
         line.set_linewidth(4.0)
-    
+    ts = time.strftime("%Y-%m-%d_%H:%M:%S")
+    ax.annotate(f"Generated : {ts}", xy = (5, 5))
     figure_path = os.path.join(result_folder, f"{data_id}_evaluation.png")
     plt.savefig(figure_path, bbox_inches='tight', pad_inches=0)
     plt.close()
