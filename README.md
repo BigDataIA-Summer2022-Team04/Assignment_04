@@ -20,13 +20,13 @@
 * DataPerf Source Source code and dataset stored as a branch [dataperf_src](https://github.com/BigDataIA-Summer2022-Team04/Assignment_04/tree/dataperf_src)
 
 * Airflow DAG
-* `clean_dir` - Clean's the working directory 
-* `download_code` - Download's the source code along with dataset from [dataperf_src](https://github.com/BigDataIA-Summer2022-Team04/Assignment_04/tree/dataperf_src) branch
-* `generate_template` - Generates the `task_setup.yml` file from the `template.yml` file replacing the user input.
-* `run_python_script` - Runs the computation script namely `create_baselines.py`, `main.py` and `plotter.py`
-* `send_report_email` - Send an email along with the generated report image 
-* `send_failure_email` - Send an email informing the failure of job
-* `send_ack_email` - Send an email acknowledging the job run and for for further update email
+  * `clean_dir` - Clean's the working directory 
+  * `download_code` - Download's the source code along with dataset from [dataperf_src](https://github.com/BigDataIA-Summer2022-Team04/Assignment_04/tree/dataperf_src) branch
+  * `generate_template` - Generates the `task_setup.yml` file from the `template.yml` file replacing the user input.
+  * `run_python_script` - Runs the computation script namely `create_baselines.py`, `main.py` and `plotter.py`
+  * `send_report_email` - Send an email along with the generated report image 
+  * `send_failure_email` - Send an email informing the failure of job
+  * `send_ack_email` - Send an email acknowledging the job run and for for further update email
 
 ## Screenshots:
 ### 1. Airflow DAG's
